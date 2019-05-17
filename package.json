@@ -1,0 +1,22 @@
+{
+  "name": "3d-pages-template",
+  "version": "1.0.0",
+  "description": "A template for 3D Github Pages repositories",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/index.html --out-dir ./dev",
+    "build": "parcel build ./src/index.html --public-url ./dist && move-cli ./dist/index.html ./index.html"
+  },
+  "author": "jonesjonathan",
+  "license": "ISC",
+  "homepage": "https://jonesjonathan.github.io/",
+  "dependencies": {
+    "three": "^0.103.0",
+    "three-gltf-loader": "^1.103.0"
+  },
+  "devDependencies": {
+    "move-cli": "^1.2.1",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-clean-dist": "0.0.6"
+  }
+}
